@@ -144,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ex1-4.cpp" />
+    <ClCompile Include="ex1-5.cpp" />
     <ClCompile Include="ex1-6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
