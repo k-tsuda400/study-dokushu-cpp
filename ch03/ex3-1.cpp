@@ -33,16 +33,16 @@ const int& A::get() const
     return v;
 }
 
-int main()
-{
-    A a;
-    a.set(42);
-
-    const A& ca = a;
-    std::cout << ca.get();
-    // エラー原因：オブジェクトがconst参照型なのに、getにはconstがついていない
-    // 定義と宣言の両方を"int get() const"というふうにconstを後ろにつけてあげればOK
-}
+//int main()
+//{
+//    A a;
+//    a.set(42);
+//
+//    const A& ca = a;
+//    std::cout << ca.get();
+//    // エラー原因：オブジェクトがconst参照型なのに、getにはconstがついていない
+//    // 定義と宣言の両方を"int get() const"というふうにconstを後ろにつけてあげればOK
+//}
 
 // (3)
 // - mutableは、メンバ関数にconstがついた場合であっても、メンバー変数の値を変えるときに使う
